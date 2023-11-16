@@ -7,12 +7,14 @@ PLAYER_HEIGHT = 8
 PLAYER_SPEED = 2
 
 class Player(Entity):
-    def __init__(self, x, y):
+    def __init__(self, x, y, max_hp):
         super().__init__(x, y, PLAYER_WIDTH, PLAYER_HEIGHT)
         self.x = x
         self.y = y
         self.w = PLAYER_WIDTH
         self.h = PLAYER_HEIGHT
+        self.max_hp = max_hp
+        self.hp = max_hp
         self.is_alive = True
 
     def update(self):
