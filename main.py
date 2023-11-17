@@ -78,10 +78,10 @@ class App:
         load_bgm(0, "assets/bgm_title.json", 2, 3, 4)
         load_bgm(1, "assets/bgm_play.json", 5, 6, 7)
         pyxel.load("style.pyxres")
+        self.background = Background()
         self.scene = SCENE_TITLE
         self.score = 0
         self.kills = 0
-        self.background = Background()
         self.player = Player(pyxel.width / 2, pyxel.height - 20, max_hp = 100)
         pyxel.playm(0, loop=True)
         pyxel.run(self.update, self.draw)
