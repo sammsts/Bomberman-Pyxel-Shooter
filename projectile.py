@@ -1,9 +1,9 @@
 import pyxel
 from entity import Entity
 
-BULLET_WIDTH = 2
+BULLET_WIDTH = 8
 BULLET_HEIGHT = 8
-BULLET_COLOR = 11
+BULLET_COLOR = 9
 BULLET_SPEED = 4
 
 bullets = []
@@ -16,6 +16,7 @@ class Bullet(Entity):
         self.w = BULLET_WIDTH
         self.h = BULLET_HEIGHT
         self.is_alive = True
+
         bullets.append(self)
 
     def update(self):
@@ -27,4 +28,4 @@ class Bullet(Entity):
             print(f"Erro ao atualizar bala: {e}")
 
     def draw(self):
-        pyxel.rect(self.x, self.y, self.w, self.h, BULLET_COLOR)
+        pyxel.blt(self.x, self.y, 0, 0, 8, self.w, self.h, BULLET_COLOR)
