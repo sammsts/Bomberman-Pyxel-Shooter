@@ -46,7 +46,7 @@ class App:
         pyxel.sound(0).set("a3a2c1a1", "p", "7", "s", 5)
         pyxel.sound(1).set("a3a2c2c2", "n", "7742", "s", 10)
         load_bgm(0, "assets/bgm_title.json", 2, 3, 4) #Entrance music
-        load_bgm(1, "assets/bgm_play.json", 5, 6, 7) #Match music
+        load_bgm(1, "assets/bgm_play.json", 5, 6, 7) #Musica da partida
         self.background = Background()
         self.scene = SCENE_TITLE
         self.score = 0
