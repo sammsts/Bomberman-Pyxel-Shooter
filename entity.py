@@ -7,7 +7,7 @@ class Entity:
         self.is_alive = True
 
     def update(self):
-        pass  # Lógica de atualização genérica para entidades
+        pass 
 
     def draw(self):
-        pass  # Lógica de desenho genérica para entidades
+        pass
