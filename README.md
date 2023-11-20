@@ -1,4 +1,4 @@
-# Game-in-Python
+# Bomberman Pyxel Shooter
 A mini game developed in python, using pyxel (retro game engine).
 
 ## Requirements
